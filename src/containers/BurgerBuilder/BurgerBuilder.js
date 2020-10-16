@@ -24,7 +24,6 @@ class BurgerBuilder extends Component {
         price: 4,
         purchase: false,
         purchasing: false,
-
     }
 
     updatePurchaseable = (ingredients) => {
@@ -96,10 +95,9 @@ class BurgerBuilder extends Component {
         for(let key in disableInfo){
             disableInfo[key] = disableInfo[key] <= 0;
         }
-        console.log(this.state.purchase);
+        
         return(
         <Aux>   
-            
             <Burger ingredients={this.state.ingredients}/>
             <Modal 
             show={this.state.purchasing}

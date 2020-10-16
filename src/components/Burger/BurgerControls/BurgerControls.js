@@ -24,8 +24,8 @@ const burgerControls = (props) => {
     return ( 
         <div className = "BurgerControls" > 
         <p>Current Price <strong>{props.price.toFixed(2)}</strong></p>
-            {controls.map(ctr => ( <
-                BurgerControl 
+            {controls.map(ctr => ( 
+                <BurgerControl 
                 key = {ctr.label}
                 label = {ctr.label}
                 added = {() => props.ingredientsAdded(ctr.type)}
